@@ -1,7 +1,6 @@
-import Vue from 'vue';
 import { applyNodeProps, createListener } from '../utils';
 
-export default Vue.component('v-stage', {
+export default {
   render: function(createElement) {
     return createElement('div', this.$slots.default);
   },
@@ -67,4 +66,4 @@ export default Vue.component('v-stage', {
       // })
     }
   }
-});
+};

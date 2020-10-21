@@ -1,17 +1,17 @@
 /*!
- * vue-konva v2.1.3 - https://github.com/konvajs/vue-konva#readme
+ * vue-konva v2.1.4 - https://github.com/konvajs/vue-konva#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("vue"), require("konva"));
+		module.exports = factory(require("konva"));
 	else if(typeof define === 'function' && define.amd)
-		define(["vue", "konva"], factory);
+		define(["konva"], factory);
 	else if(typeof exports === 'object')
-		exports["VueKonva"] = factory(require("vue"), require("konva"));
+		exports["VueKonva"] = factory(require("konva"));
 	else
-		root["VueKonva"] = factory(root["Vue"], root["Konva"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__2__) {
+		root["VueKonva"] = factory(root["Konva"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__1__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -95,39 +95,29 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
+module.exports = __webpack_require__(2);
+
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(3);
-
+module.exports = __WEBPACK_EXTERNAL_MODULE__1__;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
-
-/***/ }),
-/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: external {"root":"Vue","commonjs2":"vue","commonjs":"vue","amd":"vue"}
-var external_root_Vue_commonjs2_vue_commonjs_vue_amd_vue_ = __webpack_require__(0);
-var external_root_Vue_commonjs2_vue_commonjs_vue_amd_vue_default = /*#__PURE__*/__webpack_require__.n(external_root_Vue_commonjs2_vue_commonjs_vue_amd_vue_);
 
 // CONCATENATED MODULE: ./src/utils/updatePicture.js
 // adapted FROM: https://github.com/lavrton/react-konva/blob/master/src/react-konva-fiber.js
@@ -266,8 +256,7 @@ function findKonvaNode(instance) {
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
-
-/* harmony default export */ var Stage = (external_root_Vue_commonjs2_vue_commonjs_vue_amd_vue_default.a.component('v-stage', {
+/* harmony default export */ var Stage = ({
   render: function render(createElement) {
     return createElement('div', this.$slots.default);
   },
@@ -331,7 +320,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
       // })
     }
   }
-}));
+});
 // CONCATENATED MODULE: ./src/components/KonvaNode.js
 function KonvaNode_extends() { KonvaNode_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return KonvaNode_extends.apply(this, arguments); }
 
@@ -452,7 +441,7 @@ var CONTAINERS = {
 
 
 if (typeof window !== 'undefined' && !window.Konva) {
-  __webpack_require__(2);
+  __webpack_require__(1);
 }
 
 var KONVA_NODES = ['Layer', 'FastLayer', 'Group', 'Label', 'Rect', 'Circle', 'Ellipse', 'Wedge', 'Line', 'Sprite', 'Image', 'Text', 'TextPath', 'Star', 'Ring', 'Arc', 'Tag', 'Path', 'RegularPolygon', 'Arrow', 'Shape', 'Transformer'];
